@@ -6,7 +6,7 @@
 Link Of Website : http://theharshsharma.tech/
 
 
-<a href="https://github.com/harshgeek4coder/Portfolio-Website" ><img src="https://github.com/harshgeek4coder/Portfolio-Website/blob/master/pw-1.png"></a>
+<a href="https://github.com/harshgeek4coder/Portfolio-Website" ><img src="https://github.com/harshgeek4coder/Portfolio-Website/blob/master/new-pf-1.png"></a>
 
 This GitHub repository contains Codes and necesssary CSS , javasccript and html files for my portfolio website project
 
