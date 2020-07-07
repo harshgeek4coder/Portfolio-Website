@@ -51,8 +51,145 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.preloader-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9999;
+    background: #000000;
+    transition: all 0.2s ease;
+  }
+  
+  .preloader-wrapper p {
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.25rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .preloader {
+    position: relative;
+    width: 50px;
+  }
+  
+  .preloader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .circular {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    animation: rotate 1568ms linear infinite;
+    transform-origin: center center;
+    /*background: red;*/
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+  }
+  
+  @keyframes color {
+    100%, 0% {
+      stroke: #d62d20;
+    }
+    40% {
+      stroke: #0057e7;
+    }
+    66% {
+      stroke: #008744;
+    }
+    80%, 90% {
+      stroke: #ffa700;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* HEADER SECTION */
 
@@ -77,8 +214,8 @@ h6 {
     font-family: "Poppins", sans-serif;
     line-height: 1;
     margin: 0;
-    padding: 0 30px;
-    font-weight: 600;
+    padding: 0px 440px;
+
 
 } 
 
@@ -87,14 +224,14 @@ h6 {
     color: #fff;
     line-height: 1;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
 }
 
 #header h2{
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 250px;
-    padding:10px 30px;
+    margin-top: 180px;
+    padding:15px 440px;
     color: #fff;
 
 }
@@ -103,7 +240,7 @@ h6 {
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     margin-top: 0px;
-    padding:10px 30px;
+    padding:15px 440px;
     color: #fff;
 }
 
@@ -115,19 +252,22 @@ h6 {
 
 #header .social{
     display: flex;
-    margin-top: 45px;
-    padding:0 30px ;
+    
+    padding:50px 440px;
+    
+    
    
 }
 
 #header .social a{
     font-size: 28px;
+   background: rgba(255, 255, 255, 0.08);
     display: flex;
     justify-content: center;
     align-items: center;
     color:#fff;
-    margin-right: 8px;
-    border-radius: 50%;
+    margin-right: 25px;
+    border-radius: 30%;
     width: 45px;
     height: 50px;
     transition: color all 0.8s ease-in-out;
@@ -138,7 +278,46 @@ h6 {
     color:#C72C41;
     transition: transform 0.8s ease-in-out;
     transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.1);
 }
+#header  .social a:nth-child(1):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+    animation: shake 1200ms;
+}
+#header .social a:nth-child(2):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+}
+#header  .social a:nth-child(3):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+}
+#header  .social a:nth-child(4):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+}
+#header  .social a:nth-child(5):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+}
+
+#header  .social a:nth-child(6):hover{
+    color: #C72C41;
+    background: #000;
+    transform: scale(1.3);
+}
+
+
+
+
+
+
 
 #tc{
     color: #C72C41;
@@ -203,20 +382,54 @@ h6 {
        
         background: transparent;
     }
-
+    #header{
+        overflow-x: hidden;
+    }
     #header h2{
-        padding: -20px;
+        
+        padding: 0 100px;
         margin-top: 180px;
         line-height: auto;
         font-size: 30px;
+    
+       
+       
     }
     #header h1{
         font-size: 10px;
+        margin: 0;
+        padding: 10px 100px;
         font-weight: 400;
-        padding: -20px;
+        
+       
+        
     }
+    #header .typeh2{
+        
+        margin: 0;
+        padding: 10px 100px;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: auto;
+        line-height: auto;
+        margin-right: auto; 
+         
+    }
+     
+
+        
+    
     #header .social {
-     margin-top: 50px;
+     margin-top: 30px;
+     margin-left: 0px;
+    padding:25px 100px;
+    }
+
+    #header .social a{
+        margin-right: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 18%;
     }
 }
 
@@ -256,7 +469,10 @@ h6 {
 
 nav a,nav a:hover
 {
-	color: #fff;
+    font-family:'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
 }
 
 li.nav-item a.nav-link
@@ -464,7 +680,16 @@ section .container {
    
     border-radius: 50%;
     max-height: 300px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
 }
+
+#pic:hover{
+    transform: scale(1.1);
+}
+
+
+
 
 .about-me .content p{
     padding-bottom: 0;

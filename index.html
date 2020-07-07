@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Sharma</title>
-
-    <meta name="description" content="Harsh Sharma is a second year CSE undergrad and a tech enthusiast who specialises in Data Science, Machine Learning ">
-    <meta name="keywords" content="Harsh Sharma, Portfolio Website, Harsh Sharma website, Harsh Sharma SRM, Portfolio, CV, Resume,SRM CHENNAI,SRM IST">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171690017-1"></script>
 <script>
@@ -16,6 +10,13 @@
 
   gtag('config', 'UA-171690017-1');
 </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Sharma</title>
+
+    <meta name="description" content="Harsh Sharma is a second year CSE undergrad and a tech enthusiast who specialises in Data Science, Machine Learning ">
+    <meta name="keywords" content="Harsh Sharma, Portfolio Website, Harsh Sharma website, Harsh Sharma SRM, Portfolio, CV, Resume,SRM CHENNAI,SRM IST">
+
 
 
 
@@ -38,6 +39,37 @@
 </head>
 <body>
 
+
+
+
+
+    <div class="preloader-wrapper" id="preloader">
+        <div class="preloader">
+          <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" />
+          </svg>
+        </div>
+        <p>
+          LOADING
+          <br>
+          <small>
+           
+          </small>
+        </p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Particle Animation-->
 
     <div id="particles-js"></div>
@@ -57,7 +89,7 @@
            
 
         
-        <div class="navbar navbar-inverse navbar-fixed-top navbar-fixed-width" role="navigation"></div>
+        <div class="navbar navbar-inverse navbar-fixed-top navbar-fixed-width" role="navigation">
         <nav class="navbar navbar fixed-top navbar-expand-sm nav-menu" id="nav">
             <div class="container">
             <a href ="#" class="navbar-brand" >\harsh_sharma/</a>
@@ -78,25 +110,26 @@
             </div>
         </div>
         </nav>
+    </div>
   
 
-            <h2 id="greetings" style="font-size: 30px; color: #C72C41;">Hey !, My Name Is</h2>
+            <h2 id="greetings" style="font-size: 30px; color: #C72C41;">Hey ! This Is</h2>
             <h1>Harsh Sharma</h1>
             
-            <h2 class="typeh2">I am a <span class="type"></span></h2>
+            <h2 class="typeh2">I am <span class="type"></span></h2>
           
             <script src="js/typed.js"></script>
             <script>
                 var typed = new Typed('.type', {
-                strings: ['Data Science Enthusiast',
-                          'Data Analyst',
-                          'Machine Learning Developer',
-                          'AI Enthusiast',
-                          'Web Developer'
+                strings: ['a Data Science Enthusiast',
+                          'a Data Analyst',
+                          'a Machine Learning Developer',
+                          'an AI Enthusiast',
+                          'a Web Developer'
                  ],
                 
-                 typeSpeed: 60,
-                 backSpeed: 60,
+                 typeSpeed: 80,
+                 backSpeed: 100,
                  loop: true,
                  smartBackspace: true // Default value
                 });
@@ -145,7 +178,7 @@
 
         <div class="row">
         <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200"  data-aos-easing="ease-in-out">
-            <img id="pic" src="img/me2.png" class="mx-auto d-block" alt="Responsive image">
+            <img id="pic" src="img/me2.png" class="mimg mx-auto d-block" alt="Responsive image">
         </div>
     
             
@@ -183,7 +216,7 @@
                 </ul>
             </div>
         </div>
-        <a href="https://drive.google.com/file/d/1ul-_NdO6JCjkaA7tWC5WjHnY-SiBwns2/view?usp=sharing" class="button4" style="background-color:#C72C41; color: #ffffff;" target="_blank">Download Resume</a>
+        <a href="https://drive.google.com/file/d/1my0qybdIctgIlcnZseSHW-lAfN8BFktg/view?usp=sharing" class="button4" style="background-color:#C72C41; color: #ffffff;" target="_blank">Download Resume</a>
 
         
 
@@ -946,7 +979,7 @@
                            Animation On Scroll JS,Typed JS And Particle Animation JS. </p>
                         <div class="portfolio-links">
                             <a href="img/Pf/pw-1.png" data-gall="portfolioGallery" class="venobox"><i class="fas fa-plus"></i></a>
-                            <a href="" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/harshgeek4coder/Portfolio-Website" target="_blank"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1134,8 +1167,41 @@
 
 
 
+
+
+   <script>
+
+
+</script>
+
+
+
+
+
+
   <!-------------------------JAVASCRIPT ANIMATION SCRIPTS-------------------->
 <script>
+
+
+//Custom Loader Animation
+       
+$(window).bind('load', function() {
+        $("#preloader").fadeOut('slow');
+      }); 
+
+onload="myFunction()"
+
+function myFunction() {
+ var preloader = document.getElementById('preloader');
+   preloader.style.opacity = '0'; // Creates Fade Out Trasition
+ setTimeout(function() {
+    preloader.style.display = "none";
+  }, 300);
+ }
+
+
+
+
 
 // animate on scroll
 
